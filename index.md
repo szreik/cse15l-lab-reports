@@ -4,3 +4,5 @@ I *love* **sauce.**
 - Sauce
 - Basil
 - Tomato
+
+[Lab Report 1](lab-report-1-week-2.md)
