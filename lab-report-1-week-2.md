@@ -39,13 +39,22 @@ Are you sure you want to continue connecting
 
 ## Moving Files With `scp`
 1. Put java file (in this case, WhereAmI.java) onto your computer.
-2. Enter
-
-     `scp WhereAmI.java cs15lsp22XX@ieng6.ucsd.edu:~/` 
-     
-     into the terminal on client, again replacing `XX` with the appropriate letters from your course specific account.
+2. Enter `scp WhereAmI.java cs15lsp22XX@ieng6.ucsd.edu:~/` into the terminal on client, again replacing `XX` with the appropriate letters from your course specific account.
 3. Use ssh to enter remote server.
 4. Use command `ls` to check if file (WhereAmI.java) is in ssh.
 ![Image](scp.png)
 
 ## Setting An SSH Key
+1. Enter `ssh-keygen` into terminal on server. 
+2. When prompted with `Enter file in which to save the key`, enter
+
+    `/Users/<user-name>/.ssh/id_rsa` 
+    
+    replacing `<username>` with the appropriate one on your client. 
+3. Enter an empty space bar twice when prompted with `Enter passphrase (empty for no passphrase):`.
+4. If you are on Windows, [use these intructions](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) to complete an extra step. If you are on Mac, ignore this step and proceed to Step 5. 
+5. Enter remote server and enter command `mkdir .ssh`. Exit server.
+6. On client, enter `scp/Users<user-name>/.ssh/id_rsa.pub
+cs15lsp22XX@ieng6.ucsd.edu:~/.ssh/authorized_keys`, replacing `<user-name>` and `XX` with appropriate inputs.
+7. Test if you can login without needing a password.
+![Image](nopass.png)
