@@ -14,13 +14,15 @@
 `ssh cs15lsp22zz@ieng6.ucsd.edu`
 
 5. If you get a message that reads:
-`The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't
+
+    `The authenticity of host 'ieng6.ucsd.edu (128.54.70.227)' can't
 be established.
 RSA key fingerprint is
 SHA256:ksruYwhnYH+sySHnHAtLUHngrPEyZTDl/1x99wUQcec.
 Are you sure you want to continue connecting
 (yes/no/[fingerprint])?`
-Enter `yes` into the terminal.
 
-6. Enter your password, and if you should see the following screen you are connected!
+    Enter `yes` into the terminal.
+
+6. Enter your password, and if you see the following screen you are connected!
 ![Image](remotecon.png)
