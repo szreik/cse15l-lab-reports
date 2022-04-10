@@ -11,7 +11,7 @@
 3. Open VScode and open a terminal by clicking "Terminal" in top menu and then selecting new terminal.
 4.  Enter the following command into the terminal, replacing `XX` with the appropriate letters from your course specific account.
 
-    `ssh cs15lsp22zxx@ieng6.ucsd.edu`
+    `ssh cs15lsp22zXX@ieng6.ucsd.edu`
 
 5. If you get a message that reads:
 
@@ -27,5 +27,25 @@ Are you sure you want to continue connecting
 6. Enter your password, and if you see the following screen you are connected!
 ![Image](remotecon.png)
 
- ## Trying Some Commands
- 1. 
+## Trying Some Commands
+ 1. Try the `ls -lat` and `ls -a` commands on the remote server.
+ ![Image](lslat.png)
+ 2. Try the `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`  and ` cat /home/linux/ieng6/cs15lsp22/public/hello.txt` commands on the remote server.
+ ![Image](cpcat.png)
+ 3. Try the `ls -lat` and `ls -a` commands on client.
+ ![Image](lslatclient.png)
+ 4. Try the `cp /home/linux/ieng6/cs15lsp22/public/hello.txt ~/`  and ` cat /home/linux/ieng6/cs15lsp22/public/hello.txt` on client.
+ ![Image](catclient.png)
+
+## Moving Files With `scp`
+1. Put java file (in this case, WhereAmI.java) onto your computer.
+2. Enter
+
+     `scp WhereAmI.java cs15lsp22XX@ieng6.ucsd.edu:~/` 
+     
+     into the terminal on client, again replacing `XX` with the appropriate letters from your course specific account.
+3. Use ssh to enter remote server.
+4. Use command `ls` to check if file (WhereAmI.java) is in ssh.
+![Image](scp.png)
+
+## Setting An SSH Key
