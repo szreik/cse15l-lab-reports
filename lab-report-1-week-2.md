@@ -46,11 +46,7 @@ Are you sure you want to continue connecting
 
 ## Setting An SSH Key
 1. Enter `ssh-keygen` into terminal on server. 
-2. When prompted with `Enter file in which to save the key`, enter
-
-    `/Users/<user-name>/.ssh/id_rsa` 
-    
-    replacing `<username>` with the appropriate one on your client. 
+2. When prompted with `Enter file in which to save the key`, enter `/Users/<user-name>/.ssh/id_rsa` replacing `<username>` with the appropriate one on your client. 
 3. Enter an empty space bar twice when prompted with `Enter passphrase (empty for no passphrase):`.
 4. If you are on Windows, [use these intructions](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_keymanagement#user-key-generation) to complete an extra step. If you are on Mac, ignore this step and proceed to Step 5. 
 5. Enter remote server and enter command `mkdir .ssh`. Exit server.
@@ -58,3 +54,8 @@ Are you sure you want to continue connecting
 cs15lsp22XX@ieng6.ucsd.edu:~/.ssh/authorized_keys`, replacing `<user-name>` and `XX` with appropriate inputs.
 7. Test if you can login without needing a password.
 ![Image](nopass.png)
+
+## Optimizing Remote Running
+1. For copying a local edit in WhereAmI.java to the server and running it, first enter `scp WhereAmI.java cs15lsp22avv@ieng6.ucsd.edu:~/` into the terminal, followed by `ssh cs15lsp22avv@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` and you should see it run. 
+![Image](remoterun.png)
+(Here one can see the commands making the file run on the server, with the last line `"hello"` being the local edit. )
