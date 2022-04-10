@@ -63,5 +63,7 @@ cs15lsp22XX@ieng6.ucsd.edu:~/.ssh/authorized_keys`, replacing `<user-name>` and 
     `ssh cs15lsp22avv@ieng6.ucsd.edu "javac WhereAmI.java; java WhereAmI"` and you should see it run. 
 ![Image](remoterun.png)
 (Here one can see the commands making the file run on the server, with the last line `"hello"` being the local edit. )
+
 ---
+
 [**Back to Homepage**](https://szreik.github.io/cse15l-lab-reports)
