@@ -11,7 +11,7 @@
 3. Open VScode and open a terminal by clicking "Terminal" in top menu and then selecting new terminal.
 4.  Enter the following command into the terminal, replacing `XX` with the appropriate letters from your course specific account.
 
-`ssh cs15lsp22zz@ieng6.ucsd.edu`
+    `ssh cs15lsp22zxx@ieng6.ucsd.edu`
 
 5. If you get a message that reads:
 
@@ -26,3 +26,6 @@ Are you sure you want to continue connecting
 
 6. Enter your password, and if you see the following screen you are connected!
 ![Image](remotecon.png)
+
+ ## Trying Some Commands
+ 1. 
