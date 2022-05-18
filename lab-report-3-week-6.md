@@ -31,3 +31,7 @@ account (it took two pictures to capture all the files saved)
 3. Show combining scp, ;, and ssh to copy the whole directory and run the tests in one line
 ![Image](combine1.png)
 ![Image](combine2.png)
+
+---
+
+[**Back to Homepage**](https://szreik.github.io/cse15l-lab-reports)
