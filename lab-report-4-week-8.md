@@ -19,7 +19,7 @@
 
     For Snippet 2, I think the change to make this pass could require more than 10 lines of code. First, we should remove lines 15-17 to get rid of the indexOutofBounds error. Then, one would have to add some conditions after the openBracket variable is set where the code searches for any other open brackets and counts the amount, then searches for closeParen after we have found as many close brackets as open brackets that were counted after the inital openBracket variable. This same logic should be done for the parentheses variables.
 
-    For Snippet 3, I think this 
+    For Snippet 3, I think this change would require changing more than 10 lines of code. This is because Snippet 3 is making the links span more than one line. This is a big issue for the current getLinks() method because it looks at the links line by line. To get it to look at the file as a whole I think we would have to restructure more than 10 lines of this method.
 ---
 
 [**Back to Homepage**](https://szreik.github.io/cse15l-lab-reports)
