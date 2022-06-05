@@ -15,6 +15,8 @@ The result from the provided implementation: ![494provided](494otherresult.png)
 - The result from my own implementation: ![201result2](494myresult.png)
 - The expected list of links should have one link in it, and it should be `(foo)`. You can see this should be the expected output based on the VSCode preview ![494preview](494preview.png)
 - The problem with both implementations is that they don't account for the use of a back-slash followed by a parentheses, which allows for parentheses to be included in the link without escaping the URL parentheses. These backslashes are not supposed to show up in the link, but both of these implementations include a back-slash. For the provided class implementation, the highlighted portions of code pictured below could be changed to search for and remove any backslashes from the given URL. ![Image](494highlight.png)
+
+
 ---
 
 [**Back to Homepage**](https://szreik.github.io/cse15l-lab-reports)
